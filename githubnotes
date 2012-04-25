@@ -1,0 +1,31 @@
+instruction using github to pull or push
+Global setup:
+
+ Set up git
+  git config --global user.name "Your Name"
+  git config --global user.email lyase.d@gmail.com
+      
+
+Next steps:
+ creating from scratch ______________________________________________________
+
+  mkdir basephp
+  cd basephp
+  git init
+  touch README
+creating from github pull____________________________________________________
+git clone git://github.com/lyase/basecontribution.git
+working localy on main branch________________________________________________
+edit README
+   git commit -m 'more commit'
+working locally on new branch will not be pushed to public repo______________
+git checkout -b mybranch
+edit README
+git commit -a
+
+
+pushing back_________________________________________________________________
+only the master branch get pushed
+  git remote add origin git@github.com:lyase/basephp.git
+  git push -u origin master
+
