@@ -9,12 +9,12 @@ Global setup:
 Next steps:
  creating from scratch ______________________________________________________
 
-  mkdir basephp
-  cd basephp
+  mkdir cblog
+  cd cblog 
   git init
   touch README
 creating from github pull____________________________________________________
-git clone git://github.com/lyase/basecontribution.git
+git clone git://github.com/lyase/cblog.git
 working localy on main branch________________________________________________
 edit README
    git commit -m 'more commit'
@@ -26,6 +26,5 @@ git commit -a
 
 pushing back_________________________________________________________________
 only the master branch get pushed
-  git remote add origin git@github.com:lyase/basephp.git
+  git remote add origin git@github.com:lyase/cblog.git
   git push -u origin master
-
