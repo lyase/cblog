@@ -1,10 +1,10 @@
 CMAKE_MINIMUM_REQUIRED( VERSION 2.8 )
 
-PROJECT(wittyPlusBase)
+PROJECT(cblogBase)
 
 ADD_DEFINITIONS(-std=c++0x -Wall -Wextra)
 
-include_directories(BEFORE ${CMAKE_CURRENT_SOURCE_DIR}) # So we can go '#include <wittyPlus>
+include_directories(BEFORE ${CMAKE_CURRENT_SOURCE_DIR}) # So we can go '#include <cblogPlus>
 
 # Settings for configuration and script files
 IF( "${CMAKE_BUILD_TYPE}" STREQUAL Release )
@@ -18,7 +18,7 @@ option(WTDebug "Use the witty debug libraries ? (wtd.so etc.)" off)
 # Options that we're gonna add
 option(DBO "Use witty DBO" on)
 #set(DB_CONNECTION_STRING host=localhost user=wittyPlus dbname=wittyPlus password=wittyPlus cache string "http://www.postgresql.org/docs/8.1/static/libpq.html")
-set( DB_CONNECTION_STRING "host=localhost user=witty_plus dbname=witty_plus password=witty_plus" CACHE string "DB Connection string")
+#set( DB_CONNECTION_STRING "host=localhost user=witty_plus dbname=witty_plus password=witty_plus" CACHE string "DB Connection string")
 message("DB Connection string is: ${DB_CONNECTION_STRING}")
 
 # More options
@@ -58,7 +58,7 @@ find_package(Boost 1.42.0 REQUIRED COMPONENTS system program_options signals dat
 include_directories(BEFORE SYSTEM ${Boost_INCLUDE_DIR})
 
 # Sub directories
-add_subdirectory(wittyPlus)
+add_subdirectory(cblogPlus)
 add_subdirectory(utils)
 add_subdirectory(tests)
 add_subdirectory(app)
