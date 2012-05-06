@@ -1,4 +1,4 @@
-/** \file main.cpp
+/**  \file main.cpp
 * Copyright (C) 2006 Wim Dumon, Koen Deforche
 * See the LICENSE file for terms of use.
 * \b compiles with \code g++ -I/usr/local/wt/include -o hello.wt main.cpp -L/usr/local/wt/lib -lwthttp -lwt \endcode
